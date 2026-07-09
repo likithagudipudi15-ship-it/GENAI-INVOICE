@@ -1,15 +1,15 @@
-# AI Invoice Analyzer
+# AI Multilingual Invoice Analyzer
 
-An AI-powered invoice analysis application built with Streamlit and Google's Gemini API. Upload an invoice image or PDF to automatically extract key information, interpret invoice details, and generate structured insights using Generative AI.
+An AI-powered invoice understanding application built with Streamlit and Google's Gemini API. Upload an invoice image and ask questions in natural language to receive accurate, context-aware answers about the invoice contents.
 
 ---
 
 ## Features
 
-- 🧾 Upload invoice images or PDF documents
-- 🤖 AI-powered invoice understanding using Google Gemini
-- 📄 Extracts and interprets invoice details
-- 💬 Generates structured and easy-to-read responses
+- 📄 Upload invoice images (PNG, JPG, JPEG)
+- 🌍 Multilingual invoice understanding
+- 🤖 Ask natural language questions about invoice details
+- 💡 AI-powered responses using Google Gemini
 - ⚡ Interactive Streamlit interface
 
 ---
@@ -19,6 +19,7 @@ An AI-powered invoice analysis application built with Streamlit and Google's Gem
 - Python
 - Streamlit
 - Google Gemini API
+- Pillow
 - python-dotenv
 
 ---
@@ -74,20 +75,31 @@ streamlit run app.py
 
 ## How It Works
 
-1. Upload an invoice image or PDF.
-2. The application processes the document using Google Gemini.
-3. AI extracts and interprets invoice information.
-4. The results are displayed in a clear and structured format.
+1. Upload an invoice image.
+2. Enter a question about the invoice.
+3. Google Gemini analyzes the invoice image.
+4. The application generates an accurate, context-aware response based on the invoice contents.
+
+---
+
+## Example Questions
+
+- What is the total invoice amount?
+- Who is the vendor?
+- What is the invoice date?
+- What is the invoice number?
+- What products or services were billed?
+- What is the payment due date?
 
 ---
 
 ## Future Enhancements
 
-- Automatic field extraction (vendor, invoice number, date, total amount)
-- Export extracted data to CSV or Excel
-- Multi-invoice processing
-- OCR integration for scanned invoices
-- Dashboard for invoice management
+- Support for PDF invoices
+- Automatic extraction of invoice fields
+- Export results to CSV or Excel
+- OCR support for scanned invoices
+- Invoice history and search
 
 ---
 
